@@ -1,0 +1,20 @@
+[project]
+name = "flow-surrogates"
+version = "1.0.0"
+description = "Navier-Stokes solvers, reduced-order models and neural-network surrogates for fluid flows"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7", "torch>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["cavity_solver", "cylinder_solver", "surrogate_model", "surrogate_net"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
