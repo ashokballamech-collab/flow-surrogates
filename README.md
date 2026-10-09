@@ -1,4 +1,5 @@
 # Data-Driven Surrogates for Fluid Flows
+[![tests](https://github.com/ashokballamech-collab/flow-surrogates/actions/workflows/tests.yml/badge.svg)](https://github.com/ashokballamech-collab/flow-surrogates/actions/workflows/tests.yml)
 
 Navier–Stokes solvers written from scratch in Python, validated against published
 benchmarks, and used to build reduced-order and neural-network surrogate models —
